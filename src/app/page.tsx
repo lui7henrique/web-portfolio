@@ -34,7 +34,7 @@ const WORK_EXPERIENCE = [
 export default function Home() {
 	return (
 		<main className="min-h-screen py-12 px-4 flex justify-center">
-			<div className="max-w-md w-full space-y-16 mx-auto">
+			<div className="max-w-lg w-full space-y-16 mx-auto">
 				<section id="home">
 					<BlurFade delay={0.2}>
 						<h1 className="text-lg font-semibold">Luiz Henrique</h1>
