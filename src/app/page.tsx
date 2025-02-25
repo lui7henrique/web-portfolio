@@ -1,3 +1,4 @@
+import { BlurFade } from "@/components/magicui/blur-fade";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -35,45 +36,61 @@ export default function Home() {
 		<main className="min-h-screen py-12 px-4 flex justify-center">
 			<div className="max-w-md w-full space-y-16 mx-auto">
 				<section id="home">
-					<h1 className="text-lg font-semibold">Luiz Henrique</h1>
-					<h2 className="text-neutral-400">Software Engineer</h2>
+					<BlurFade delay={0.2}>
+						<h1 className="text-lg font-semibold">Luiz Henrique</h1>
+					</BlurFade>
+
+					<BlurFade delay={0.5}>
+						<h2 className="text-neutral-400">Software Engineer</h2>
+					</BlurFade>
 				</section>
 
 				<section id="about">
-					<h2 className="text-lg font-semibold">About</h2>
-					<p className="text-neutral-400">
-						Software Engineer with 4+ years of experience, passionate about
-						building products and continuous learning.
-					</p>
+					<BlurFade delay={0.8}>
+						<h2 className="text-lg font-semibold">About</h2>
+					</BlurFade>
+
+					<BlurFade delay={1.1}>
+						<p className="text-neutral-400">
+							Software Engineer with 4+ years of experience, passionate about
+							building products and continuous learning.
+						</p>
+					</BlurFade>
 				</section>
 
 				<section id="work">
-					<h2 className="text-lg font-semibold">Work Experience</h2>
+					<BlurFade delay={1.4}>
+						<h2 className="text-lg font-semibold">Work Experience</h2>
+					</BlurFade>
 
 					<div className="space-y-4 mt-2">
-						{WORK_EXPERIENCE.map((work) => (
-							<div className="flex justify-between" key={work.company}>
-								<div className="flex items-start gap-4">
-									<div className="size-10 bg-neutral-800 relative rounded-sm overflow-hidden border border-neutral-700">
-										<Image
-											src={work.icon}
-											alt={work.company}
-											className="object-cover"
-											fill
-										/>
-									</div>
-
-									<div className="">
-										<div className="flex items-center gap-2">
-											<h3 className="text font-medium">{work.company}</h3>
+						{WORK_EXPERIENCE.map((work, index) => (
+							<BlurFade key={work.company} delay={1.7 + index * 0.3}>
+								<div className="flex justify-between">
+									<div className="flex items-start gap-4">
+										<div className="size-10 bg-neutral-800 relative rounded-sm overflow-hidden border border-neutral-700">
+											<Image
+												src={work.icon}
+												alt={work.company}
+												className="object-cover"
+												fill
+											/>
 										</div>
 
-										<p className="text-sm text-neutral-400">{work.role}</p>
+										<div className="">
+											<div className="flex items-center gap-2">
+												<h3 className="text font-medium">{work.company}</h3>
+											</div>
+
+											<p className="text-sm text-neutral-400">{work.role}</p>
+										</div>
+									</div>
+
+									<div className="text-xs text-neutral-400">
+										{work.duration}
 									</div>
 								</div>
-
-								<div className="text-xs text-neutral-400">{work.duration}</div>
-							</div>
+							</BlurFade>
 						))}
 					</div>
 				</section>
