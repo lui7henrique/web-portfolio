@@ -1,4 +1,6 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
+
 import "./globals.css";
 
 import { Space_Grotesk } from "next/font/google";
@@ -24,6 +26,7 @@ export default function RootLayout({
 		<html lang="en" className={spaceGrotesk.variable}>
 			<body className="bg-neutral-950 text-neutral-50 min-h-screen bg-gradient-to-b from-neutral-950 via-[#0a0a0b] to-neutral-950">
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	);
