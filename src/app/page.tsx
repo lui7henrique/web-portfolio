@@ -63,10 +63,10 @@ export default function Home() {
 						<h2 className="text-lg font-semibold">Work Experience</h2>
 					</BlurFade>
 
-					<div className="space-y-4 mt-2">
+					<div className="space-y-2 mt-2">
 						{WORK_EXPERIENCE.map((work, index) => (
 							<BlurFade key={work.company} delay={1.7 + index * 0.3}>
-								<div className="flex justify-between">
+								<div className="flex justify-between -mx-2 hover:bg-neutral-900 rounded-sm px-2 py-2">
 									<div className="flex items-start gap-4">
 										<div className="size-10 bg-neutral-800 relative rounded-sm overflow-hidden border border-neutral-700">
 											<Image
@@ -78,10 +78,7 @@ export default function Home() {
 										</div>
 
 										<div className="">
-											<div className="flex items-center gap-2">
-												<h3 className="text font-medium">{work.company}</h3>
-											</div>
-
+											<h3 className="text font-medium">{work.company}</h3>
 											<p className="text-sm text-neutral-400">{work.role}</p>
 										</div>
 									</div>
