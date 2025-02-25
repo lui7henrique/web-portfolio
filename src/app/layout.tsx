@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={spaceGrotesk.variable}>
-			<body className="bg-neutral-950 text-neutral-50">{children}</body>
+			<body className="bg-neutral-950 text-neutral-50 min-h-screen bg-gradient-to-b from-neutral-950 via-[#0a0a0b] to-neutral-950">
+				{children}
+			</body>
 		</html>
 	);
 }

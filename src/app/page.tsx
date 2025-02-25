@@ -94,6 +94,45 @@ export default function Home() {
 						))}
 					</div>
 				</section>
+
+				<section id="contact">
+					<BlurFade delay={2.9}>
+						<h2 className="text-lg font-semibold">Contact</h2>
+					</BlurFade>
+
+					<BlurFade delay={3.2}>
+						<p className="text-neutral-400 leading-relaxed">
+							Connect with me on{" "}
+							<Link
+								href="https://www.linkedin.com/in/luiz-henrique7/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-neutral-300 hover:text-white transition-colors underline underline-offset-2"
+							>
+								LinkedIn
+							</Link>
+							, check out my projects on{" "}
+							<Link
+								href="https://github.com/lui7henrique"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-neutral-300 hover:text-white transition-colors underline underline-offset-2"
+							>
+								GitHub
+							</Link>
+							, or follow me on{" "}
+							<Link
+								href="https://x.com/lui7henrique"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-neutral-300 hover:text-white transition-colors underline underline-offset-2"
+							>
+								X
+							</Link>
+							. Looking forward to connecting with you.
+						</p>
+					</BlurFade>
+				</section>
 			</div>
 		</main>
 	);
