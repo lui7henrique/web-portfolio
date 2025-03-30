@@ -32,8 +32,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={spaceGrotesk.variable}>
-			<body className="bg-neutral-950 text-neutral-50 min-h-screen bg-gradient-to-b from-neutral-950 via-[#0a0a0b] to-neutral-950">
+		<html lang="en" className={`${spaceGrotesk.variable} dark`}>
+			<body className="bg-background text-foreground min-h-screen bg-gradient-to-b from-background via-background/95 to-background">
 				{children}
 				<Analytics />
 			</body>
