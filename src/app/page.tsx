@@ -4,6 +4,13 @@ import Link from "next/link";
 
 const WORK_EXPERIENCE = [
 	{
+		company: "LeadMagic",
+		role: "Software Engineer",
+		duration: "2024 - Present",
+		icon: "/leadmagic.jpg",
+		sideProject: true,
+	},
+	{
 		company: "Plotwist",
 		role: "Founder",
 		duration: "2023 - Present",
@@ -13,7 +20,7 @@ const WORK_EXPERIENCE = [
 	{
 		company: "Afya",
 		role: "Software Engineer",
-		duration: "2024 - Present",
+		duration: "2024 - 2025",
 		icon: "/afya.jpeg",
 	},
 
