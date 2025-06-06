@@ -30,6 +30,12 @@ export function Links() {
 					Contact
 				</Link>
 			</BlurFade>
+
+			<BlurFade delay={1.2}>
+				<span className="text-muted-foreground cursor-not-allowed opacity-50">
+					Playground
+				</span>
+			</BlurFade>
 		</section>
 	);
 }
