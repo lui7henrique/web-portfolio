@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={`${spaceGrotesk.variable} dark`}>
-			<body className="bg-background text-foreground min-h-screen bg-gradient-to-b from-background via-background/95 to-background">
+			<body className="bg-background text-foreground min-h-screen bg-gradient-to-b from-background via-background/95 to-background/90">
 				{children}
 				<Analytics />
 			</body>

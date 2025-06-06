@@ -106,7 +106,7 @@ export default function Home() {
 							Contact me at{" "}
 							<Link
 								href="mailto:7henrique18@gmail.com"
-								className="text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2"
+								className="text-primary underline underline-offset-2"
 							>
 								7henrique18@gmail.com
 							</Link>
@@ -115,7 +115,7 @@ export default function Home() {
 								href="https://x.com/lui7henrique"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2"
+								className="text-primary underline underline-offset-2"
 							>
 								X
 							</Link>
