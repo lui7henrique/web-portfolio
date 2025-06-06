@@ -15,7 +15,7 @@ export function Links() {
 
 			<BlurFade delay={0.8}>
 				<Link
-					href="/work"
+					href="/books"
 					className="text-primary underline underline-offset-2"
 				>
 					Books
