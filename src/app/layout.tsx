@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
 	title: "Luiz Henrique",
 	description:
-		"Hey, I'm Luiz Henrique, a Design Engineer passionate about building		products and continuous learning.",
+		"Design Engineer passionate about building products and continuous learning.",
 	icons: {
 		icon: [
 			{
