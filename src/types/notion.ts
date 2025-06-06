@@ -1,5 +1,3 @@
-// Tipos para a API do Notion
-
 export interface NotionUser {
 	object: "user";
 	id: string;
@@ -105,7 +103,6 @@ export interface NotionDatabaseQueryResponse {
 	page_or_database: Record<string, never>;
 }
 
-// Tipo para o livro processado
 export interface Book {
 	id: string;
 	name: string;
