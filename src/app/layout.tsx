@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 
+import { Header } from "@/components/header";
 import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({
@@ -34,7 +35,10 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${spaceGrotesk.variable} dark`}>
 			<body className="bg-background text-foreground min-h-screen bg-gradient-to-b from-background via-background/95 to-background/90">
-				{children}
+				<main className="max-w-lg space-y-8 mx-auto py-32 px-4">
+					<Header />
+					{children}
+				</main>
 				<Analytics />
 			</body>
 		</html>
