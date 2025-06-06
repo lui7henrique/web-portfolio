@@ -45,10 +45,9 @@ export default async function Books() {
 		<>
 			<BlurFade delay={0.6}>
 				<blockquote className="border-l-4 border-gray-300 pl-4 italic text-muted-foreground mt-4 mb-6">
-					"A book is proof that humans are capable of working magic.
-					<br />
-					We look at symbols on a page and hear voices in our heads."
-					<footer className="text-sm mt-2">— Carl Sagan</footer>
+					"Read 500 pages every day. That's how knowledge works—like compound
+					interest."
+					<footer className="text-sm mt-2">— Warren Buffett</footer>
 				</blockquote>
 			</BlurFade>
 
