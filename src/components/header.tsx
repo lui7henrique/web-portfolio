@@ -6,7 +6,7 @@ export function Header() {
 	return (
 		<header id="about">
 			<BlurFade delay={0.2}>
-				<Link href="/" className="flex items-center gap-2">
+				<Link href="/" className="flex items-center gap-4">
 					<div className="rounded-full border size-10 relative overflow-hidden">
 						<Image
 							src="/me.png"

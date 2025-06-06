@@ -11,19 +11,20 @@ const WORK_EXPERIENCE = [
 		objectFit: "contain",
 	},
 	{
+		company: "Plotwist",
+		role: "Founder",
+		duration: "2023 - Present",
+		icon: "/plotwist.jpeg",
+		sideProject: true,
+	},
+	{
 		company: "LeadMagic",
 		role: "Software Engineer",
 		duration: "2024 - 2025",
 		icon: "/leadmagic.jpg",
 		sideProject: true,
 	},
-	{
-		company: "Plotwist",
-		role: "Founder",
-		duration: "2023 - 2025",
-		icon: "/plotwist.jpeg",
-		sideProject: true,
-	},
+
 	{
 		company: "Afya",
 		role: "Software Engineer",
@@ -48,9 +49,19 @@ const WORK_EXPERIENCE = [
 export default function Work() {
 	return (
 		<>
-			<div className="space-y-2 mt-2">
+			<BlurFade delay={0.6}>
+				<div className="space-y-1">
+					<p className="text-muted-foreground">
+						From frontend engineering to design and founding side projects, I've
+						worked across different scales and industries, building products
+						that solve real problems.
+					</p>
+				</div>
+			</BlurFade>
+
+			<div className="space-y-2 ">
 				{WORK_EXPERIENCE.map((work, index) => (
-					<BlurFade key={work.company} delay={1.7 + index * 0.3}>
+					<BlurFade key={work.company} delay={0.6 + index * 0.3}>
 						<div className="flex justify-between -mx-2 hover:bg-muted/30 px-2 py-2 rounded-sm">
 							<div className="flex items-start gap-4">
 								<div
