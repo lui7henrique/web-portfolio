@@ -1,6 +1,11 @@
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+	title: "Luiz Henrique • Work",
+};
 
 const WORK_EXPERIENCE = [
 	{

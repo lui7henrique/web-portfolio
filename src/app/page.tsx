@@ -1,5 +1,10 @@
 import { Links } from "@/components/links";
 import { BlurFade } from "@/components/magicui/blur-fade";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Luiz Henrique",
+};
 
 export default function Home() {
 	return (

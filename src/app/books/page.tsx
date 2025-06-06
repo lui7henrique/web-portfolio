@@ -5,6 +5,11 @@ import type {
 	NotionDatabaseQueryResponse,
 	NotionPage,
 } from "@/types/notion";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Luiz Henrique • Books",
+};
 
 function extractTextFromRichText(
 	richText: Array<{ plain_text?: string; text?: { content: string } }>,

@@ -13,9 +13,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-	title: "Luiz Henrique • Software Engineer",
+	title: "Luiz Henrique",
 	description:
-		"Software Engineer with 4+ years of experience, passionate about building products and continuous learning.",
+		"Hey, I'm Luiz Henrique, a Design Engineer passionate about building		products and continuous learning.",
 	icons: {
 		icon: [
 			{
