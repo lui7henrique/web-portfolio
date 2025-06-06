@@ -1,6 +1,6 @@
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { cn } from "@/lib/utils";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
