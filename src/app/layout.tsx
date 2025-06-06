@@ -35,16 +35,6 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${spaceGrotesk.variable} dark`}>
 			<body className="bg-background text-foreground min-h-screen relative">
-				<div
-					className="fixed inset-0 z-0"
-					style={{
-						backgroundImage: `
-							linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px),
-							linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px)
-						`,
-						backgroundSize: "20px 20px",
-					}}
-				/>
 				<main className="max-w-lg space-y-8 mx-auto py-32 px-4 relative z-10">
 					<Header />
 					{children}
