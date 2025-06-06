@@ -45,7 +45,7 @@ export default async function Books() {
 			{portfolioBooks.map((book) => (
 				<div key={book.id} className="border rounded-sm overflow-hidden">
 					{book.image && (
-						<div className="aspect-[9/16]">
+						<div className="aspect-[263/408]">
 							<img
 								src={book.image}
 								alt={book.name}
