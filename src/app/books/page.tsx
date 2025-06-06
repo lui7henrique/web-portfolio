@@ -1,3 +1,4 @@
+import { BlurFade } from "@/components/magicui/blur-fade";
 import notion from "@/services/notion";
 import type {
 	Book,
@@ -41,20 +42,33 @@ export default async function Books() {
 	const portfolioBooks = books.filter((book) => book.portfolio === true);
 
 	return (
-		<div className="grid grid-cols-3 gap-4">
-			{portfolioBooks.map((book) => (
-				<div key={book.id} className="border rounded-sm overflow-hidden">
-					{book.image && (
-						<div className="aspect-[263/408]">
-							<img
-								src={book.image}
-								alt={book.name}
-								className="w-full h-full object-cover"
-							/>
+		<>
+			<BlurFade delay={0.6}>
+				<blockquote className="border-l-4 border-gray-300 pl-4 italic text-muted-foreground mt-4 mb-6">
+					"A book is proof that humans are capable of working magic.
+					<br />
+					We look at symbols on a page and hear voices in our heads."
+					<footer className="text-sm mt-2">— Carl Sagan</footer>
+				</blockquote>
+			</BlurFade>
+
+			<div className="grid grid-cols-3 gap-4">
+				{portfolioBooks.map((book, index) => (
+					<BlurFade key={book.id} delay={0.8 + index * 0.3}>
+						<div className="border rounded-sm overflow-hidden">
+							{book.image && (
+								<div className="aspect-[263/408]">
+									<img
+										src={book.image}
+										alt={book.name}
+										className="w-full h-full object-cover"
+									/>
+								</div>
+							)}
 						</div>
-					)}
-				</div>
-			))}
-		</div>
+					</BlurFade>
+				))}
+			</div>
+		</>
 	);
 }

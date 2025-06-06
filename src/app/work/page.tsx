@@ -61,7 +61,7 @@ export default function Work() {
 
 			<div className="space-y-2 ">
 				{WORK_EXPERIENCE.map((work, index) => (
-					<BlurFade key={work.company} delay={0.6 + index * 0.3}>
+					<BlurFade key={work.company} delay={0.8 + index * 0.3}>
 						<div className="flex justify-between -mx-2 hover:bg-muted/30 px-2 py-2 rounded-sm">
 							<div className="flex items-start gap-4">
 								<div
