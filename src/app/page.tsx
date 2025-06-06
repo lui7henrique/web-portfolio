@@ -39,45 +39,26 @@ const WORK_EXPERIENCE = [
 	},
 ];
 
-function Divider() {
-	return <div className="border-b border-dashed -mx-4 sm:-mx-8" />;
-}
-
 export default function Home() {
 	return (
 		<main className="flex flex-col min-h-screen justify-center">
 			<div
 				className={cn(
-					"max-w-xl space-y-8 mx-auto py-8 px-4 flex flex-col rounded-sm",
-					"sm:border sm:rounded-sm sm:px-8 sm:py-8",
+					"max-w-lg space-y-8 mx-auto py-8 px-4 flex flex-col rounded-sm",
 				)}
 			>
-				<section id="home">
+				<section id="about">
 					<BlurFade delay={0.2}>
 						<h1 className="text-lg font-semibold">Luiz Henrique</h1>
 					</BlurFade>
 
-					<BlurFade delay={0.5}>
-						<h2 className="text-muted-foreground">Software Engineer</h2>
-					</BlurFade>
-				</section>
-
-				<Divider />
-
-				<section id="about">
-					<BlurFade delay={0.8}>
-						<h2 className="text-lg font-semibold">About</h2>
-					</BlurFade>
-
 					<BlurFade delay={1.1}>
 						<p className="text-muted-foreground">
-							Software Engineer with 4+ years of experience, passionate about
-							building products and continuous learning.
+							Design Engineer passionate about building products and continuous
+							learning.
 						</p>
 					</BlurFade>
 				</section>
-
-				<Divider />
 
 				<section id="work">
 					<BlurFade delay={1.4}>
@@ -115,8 +96,6 @@ export default function Home() {
 					</div>
 				</section>
 
-				<Divider />
-
 				<section id="contact">
 					<BlurFade delay={2.9}>
 						<h2 className="text-lg font-semibold">Contact</h2>
@@ -124,23 +103,12 @@ export default function Home() {
 
 					<BlurFade delay={3.2}>
 						<p className="text-muted-foreground leading-relaxed">
-							Connect with me on{" "}
+							Contact me at{" "}
 							<Link
-								href="https://www.linkedin.com/in/luiz-henrique7/"
-								target="_blank"
-								rel="noopener noreferrer"
+								href="mailto:7henrique18@gmail.com"
 								className="text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2"
 							>
-								LinkedIn
-							</Link>
-							, check out my projects on{" "}
-							<Link
-								href="https://github.com/lui7henrique"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2"
-							>
-								GitHub
+								7henrique18@gmail.com
 							</Link>
 							, or follow me on{" "}
 							<Link
@@ -151,7 +119,7 @@ export default function Home() {
 							>
 								X
 							</Link>
-							. Looking forward to connecting with you.
+							.
 						</p>
 					</BlurFade>
 				</section>
