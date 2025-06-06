@@ -1,4 +1,3 @@
-import { Contact } from "@/components/contact";
 import { Links } from "@/components/links";
 import { BlurFade } from "@/components/magicui/blur-fade";
 
